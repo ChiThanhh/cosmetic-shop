@@ -6,8 +6,10 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 import Home from "./pages/home";
-import Login from "./components/login";
-import Register from "./components/register";
+
+
+import LoginPopup from "./pages/login";
+import Product from "./pages/product";
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<LoginPopup />} />
+            <Route path="/product" element={<Product />} />
           </Routes>
         </main>
 
