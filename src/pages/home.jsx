@@ -78,21 +78,21 @@ const Home = () => {
   ];
 
   return (
-    <main className="bg-white text-gray-700">
+    <main className="bg-gray-900 text-gray-100">
       {/* Main Banner Section */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Slider Section - Left Side */}
-            <div className="md:col-span-2" data-aos="fade-right">
-              <div className="relative bg-gray-200 h-[500px] rounded-lg overflow-hidden shadow-lg group">
+            <div className="md:col-span-2" data-aos="fade-right" data-aos-delay="200">
+              <div className="relative bg-gray-700 h-[500px] rounded-lg overflow-hidden shadow-lg group">
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
                   style={{ backgroundImage: `url(${bannerImage})` }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
-                <div className="absolute inset-0 flex flex-col justify-center p-8 text-white">
-                  <span className="text-sm font-medium text-pink-300 mb-2" data-aos="fade-up" data-aos-delay="200">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
+                <div className="absolute inset-0 flex flex-col justify-center p-8 text-gray-100">
+                  <span className="text-sm font-medium text-gray-400 mb-2" data-aos="fade-up" data-aos-delay="200">
                     Khuyến mãi đặc biệt
                   </span>
                   <h2 className="text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay="300">
@@ -102,7 +102,7 @@ const Home = () => {
                     Cơ hội mua sắm với giá tốt nhất trong năm
                   </p>
                   <button 
-                    className="bg-pink-600 text-white px-6 py-3 rounded-full font-medium w-fit hover:bg-pink-700 transform hover:scale-105 transition-all duration-500 ease-in-out"
+                    className="bg-gray-200 text-gray-900 px-6 py-3 rounded-full font-medium w-fit hover:bg-gray-300 transform hover:scale-105 transition-all duration-500 ease-in-out"
                     data-aos="fade-up"
                     data-aos-delay="500"
                   >
@@ -120,8 +120,8 @@ const Home = () => {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
                   style={{ backgroundImage: `url(${bannerImage2})` }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent" />
-                <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent" />
+                <div className="absolute inset-0 flex flex-col justify-end p-6 text-gray-100">
                   <h3 className="text-xl font-bold mb-2" data-aos="fade-up" data-aos-delay="300">
                     Sản phẩm mới
                   </h3>
@@ -137,8 +137,8 @@ const Home = () => {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
                   style={{ backgroundImage: `url(${bannerImage})` }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent" />
-                <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent" />
+                <div className="absolute inset-0 flex flex-col justify-end p-6 text-gray-100">
                   <h3 className="text-xl font-bold mb-2" data-aos="fade-up" data-aos-delay="300">
                     Chăm sóc da
                   </h3>
@@ -155,21 +155,21 @@ const Home = () => {
       {/* Danh mục */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-pink-600 relative inline-block">
+          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-gray-300 relative inline-block">
             Danh mục nổi bật
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-pink-200 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-gray-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </h2>
           <div data-aos="fade-up" className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {["Trang điểm", "Chăm sóc da", "Nước hoa", "Phụ kiện"].map(
               (cat, idx) => (
                 <div
                   key={idx}
-                  className="bg-pink-50 p-6 rounded-lg text-center hover:shadow-lg transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+                  className="bg-gray-800 p-6 rounded-lg text-center hover:shadow-lg transform hover:-translate-y-2 transition-transform duration-300 ease-in-out"
                   data-aos="zoom-in"
                   data-aos-delay={idx * 100}
                 >
-                  <div className="h-24 bg-gray-200 rounded-full mb-4 mx-auto w-24" />
-                  <p className="font-semibold text-lg text-pink-700">{cat}</p>
+                  <div className="h-24 bg-gray-600 rounded-full mb-4 mx-auto w-24" />
+                  <p className="font-semibold text-lg text-gray-200">{cat}</p>
                 </div>
               )
             )}
@@ -178,18 +178,18 @@ const Home = () => {
       </section>
 
       {/* Sale Products Section */}
-      <section className="py-12 bg-gradient-to-r from-pink-50 to-purple-50">
+      <section className="py-12 bg-gradient-to-r from-gray-800 to-gray-700">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-pink-600 mb-4 md:mb-0" data-aos="fade-right">
+            <h2 className="text-3xl font-bold text-gray-200 mb-4 md:mb-0" data-aos="fade-right">
               Sản phẩm khuyến mãi
             </h2>
             <div className="flex items-center space-x-4" data-aos="fade-left">
-              <span className="text-sm text-gray-600">Kết thúc sau:</span>
+              <span className="text-sm text-gray-400">Kết thúc sau:</span>
               <div className="flex space-x-2">
                 {Object.entries(timeLeft).map(([unit, value]) => (
-                  <div key={unit} className="bg-white p-3 rounded-lg text-center min-w-[60px] shadow-md">
-                    <div className="text-2xl font-bold text-pink-600">{value}</div>
+                  <div key={unit} className="bg-gray-900 p-3 rounded-lg text-center min-w-[60px] shadow-md">
+                    <div className="text-2xl font-bold text-gray-200">{value}</div>
                     <div className="text-xs text-gray-500 capitalize">{unit}</div>
                   </div>
                 ))}
@@ -201,30 +201,30 @@ const Home = () => {
             {[1, 2, 3, 4].map((item, idx) => (
               <div 
                 key={item} 
-                className="border rounded-lg p-4 hover:shadow-lg bg-white transform hover:-translate-y-2 transition-all duration-500 ease-in-out"
+                className="border border-gray-700 rounded-lg p-4 hover:shadow-lg bg-gray-800 transform hover:-translate-y-2 transition-all duration-500 ease-in-out"
                 data-aos="zoom-in"
                 data-aos-delay={idx * 100}
               >
                 <div className="relative group">
-                  <div className="h-48 bg-gray-200 rounded mb-3 overflow-hidden">
+                  <div className="h-48 bg-gray-600 rounded mb-3 overflow-hidden">
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500 ease-in-out" />
                   </div>
-                  <div className="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                  <div className="absolute top-2 left-2 bg-gray-200 text-gray-900 px-3 py-1 rounded-full text-sm font-bold transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     -30%
                   </div>
                   <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                    <button className="bg-white p-2 rounded-full shadow-md hover:bg-pink-100 transition-colors duration-500 ease-in-out">
-                      <FaHeart className="text-pink-600" />
+                    <button className="bg-gray-900 p-2 rounded-full shadow-md hover:bg-gray-700 transition-colors duration-500 ease-in-out">
+                      <FaHeart className="text-gray-200" />
                     </button>
                   </div>
                 </div>
-                <h3 className="font-semibold text-base mb-2 group-hover:text-pink-600 transition-colors duration-500 ease-in-out">Sản phẩm {item}</h3>
+                <h3 className="font-semibold text-base mb-2 group-hover:text-gray-300 transition-colors duration-500 ease-in-out">Sản phẩm {item}</h3>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
-                    <p className="text-red-500 font-bold text-lg group-hover:scale-105 transition-transform duration-500 ease-in-out">279.000₫</p>
-                    <p className="text-gray-400 line-through text-sm">399.000₫</p>
+                    <p className="text-gray-200 font-bold text-lg group-hover:scale-105 transition-transform duration-500 ease-in-out">279.000₫</p>
+                    <p className="text-gray-500 line-through text-sm">399.000₫</p>
                   </div>
-                  <button className="p-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transform hover:scale-110 transition-all duration-500 ease-in-out">
+                  <button className="p-2 bg-gray-200 text-gray-900 rounded-full hover:bg-gray-300 transform hover:scale-110 transition-all duration-500 ease-in-out">
                     <FaShoppingCart />
                   </button>
                 </div>
@@ -237,29 +237,29 @@ const Home = () => {
       {/* Best Selling Products Section */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-pink-600">
+          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-gray-300">
             Sản phẩm bán chạy
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {bestSellingProducts.map((product, idx) => (
               <div 
                 key={product.id} 
-                className="border rounded-lg p-4 hover:shadow-lg bg-white transform hover:-translate-y-2 transition-all duration-500 ease-in-out"
+                className="border border-gray-700 rounded-lg p-4 hover:shadow-lg bg-gray-800 transform hover:-translate-y-2 transition-all duration-500 ease-in-out"
                 data-aos="zoom-in"
                 data-aos-delay={idx * 100}
               >
                 <div className="relative group">
-                  <div className="h-48 bg-gray-200 rounded mb-3 overflow-hidden">
+                  <div className="h-48 bg-gray-600 rounded mb-3 overflow-hidden">
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500 ease-in-out" />
                   </div>
-                  <div className="absolute top-2 right-2 bg-yellow-400 text-white p-2 rounded-full transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                  <div className="absolute top-2 right-2 bg-gray-200 text-gray-900 p-2 rounded-full transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
                     <FaStar className="text-sm" />
                   </div>
                 </div>
-                <h3 className="font-semibold text-base mb-2 group-hover:text-pink-600 transition-colors duration-500 ease-in-out">{product.name}</h3>
+                <h3 className="font-semibold text-base mb-2 group-hover:text-gray-300 transition-colors duration-500 ease-in-out">{product.name}</h3>
                 <div className="flex items-center justify-between">
-                  <p className="text-pink-600 font-bold text-lg group-hover:scale-105 transition-transform duration-500 ease-in-out">{product.price}</p>
-                  <button className="p-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transform hover:scale-110 transition-all duration-500 ease-in-out">
+                  <p className="text-gray-200 font-bold text-lg group-hover:scale-105 transition-transform duration-500 ease-in-out">{product.price}</p>
+                  <button className="p-2 bg-gray-200 text-gray-900 rounded-full hover:bg-gray-300 transform hover:scale-110 transition-all duration-500 ease-in-out">
                     <FaShoppingCart />
                   </button>
                 </div>
@@ -270,9 +270,9 @@ const Home = () => {
       </section>
 
       {/* Brand Slider Section */}
-      <section className="py-12 bg-gradient-to-r from-gray-50 to-pink-50">
+      <section className="py-12 bg-gradient-to-r from-gray-800 to-gray-700">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-pink-600">
+          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-gray-300">
             Thương hiệu nổi bật
           </h2>
           <div className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide" data-aos="fade-up">
@@ -283,10 +283,10 @@ const Home = () => {
                 data-aos="zoom-in"
                 data-aos-delay={idx * 100}
               >
-                <div className="h-40 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center transform hover:scale-105 transition-transform duration-500 ease-in-out">
-                  <div className="h-24 w-24 bg-gray-200 rounded-full transform group-hover:scale-110 transition-transform duration-500 ease-in-out" style={{ backgroundImage: `url(${brand.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                <div className="h-40 bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center transform hover:scale-105 transition-transform duration-500 ease-in-out">
+                  <div className="h-24 w-24 bg-gray-600 rounded-full transform group-hover:scale-110 transition-transform duration-500 ease-in-out" style={{ backgroundImage: `url(${brand.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
                 </div>
-                <p className="text-center mt-3 font-semibold text-gray-700 group-hover:text-pink-600 transition-colors duration-500 ease-in-out">{brand.name}</p>
+                <p className="text-center mt-3 font-semibold text-gray-200 group-hover:text-gray-300 transition-colors duration-500 ease-in-out">{brand.name}</p>
               </div>
             ))}
           </div>
@@ -296,19 +296,19 @@ const Home = () => {
       {/* Popular Searches Section */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-pink-600">
+          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-gray-300">
             Tìm kiếm nhiều nhất
           </h2>
           <div className="flex flex-wrap gap-3" data-aos="fade-up">
             {popularSearches.map((search, index) => (
               <div 
                 key={index} 
-                className="flex items-center bg-gray-100 rounded-full px-4 py-2 hover:bg-pink-100 transform hover:scale-105 transition-all duration-500 ease-in-out"
+                className="flex items-center bg-gray-700 rounded-full px-4 py-2 hover:bg-gray-600 transform hover:scale-105 transition-all duration-500 ease-in-out"
                 data-aos="zoom-in"
                 data-aos-delay={index * 100}
               >
-                <FaSearch className="text-pink-600 mr-2 transform group-hover:scale-110 transition-transform duration-500 ease-in-out" />
-                <span className="text-gray-700 group-hover:text-pink-600 transition-colors duration-500 ease-in-out">{search}</span>
+                <FaSearch className="text-gray-200 mr-2 transform group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+                <span className="text-gray-200 group-hover:text-gray-300 transition-colors duration-500 ease-in-out">{search}</span>
               </div>
             ))}
           </div>
@@ -316,24 +316,24 @@ const Home = () => {
       </section>
 
       {/* Latest Blog Posts Section */}
-      <section className="py-12 bg-gradient-to-r from-pink-50 to-purple-50">
+      <section className="py-12 bg-gradient-to-r from-gray-800 to-gray-700">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-pink-600">
-            Bài viết mới nhất
+          <h2 data-aos="fade-right" className="text-3xl font-bold mb-8 text-gray-300">
+            BàiRICH viết mới nhất
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {latestBlogs.map((blog, idx) => (
               <div 
                 key={blog.id} 
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 ease-in-out"
+                className="bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 ease-in-out"
                 data-aos="zoom-in"
                 data-aos-delay={idx * 100}
               >
-                <div className="h-56 bg-gray-200 transform hover:scale-105 transition-transform duration-500 ease-in-out" style={{ backgroundImage: `url(${blog.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                <div className="h-56 bg-gray-600 transform hover:scale-105 transition-transform duration-500 ease-in-out" style={{ backgroundImage: `url(${blog.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
                 <div className="p-6">
-                  <h3 className="font-bold text-xl mb-3 text-gray-800 group-hover:text-pink-600 transition-colors duration-500 ease-in-out">{blog.title}</h3>
-                  <p className="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                  <button className="text-pink-600 font-semibold hover:text-pink-700 transform hover:translate-x-2 transition-all duration-500 ease-in-out">
+                  <h3 className="font-bold text-xl mb-3 text-gray-200 group-hover:text-gray-300 transition-colors duration-500 ease-in-out">{blog.title}</h3>
+                  <p className="text-gray-400 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                  <button className="text-gray-200 font-semibold hover:text-gray-300 transform hover:translate-x-2 transition-all duration-500 ease-in-out">
                     Đọc thêm →
                   </button>
                 </div>
@@ -344,12 +344,12 @@ const Home = () => {
       </section>
 
       {/* Thông điệp */}
-      <section data-aos="fade-up" className="py-16 text-center bg-gradient-to-r from-pink-50 to-purple-50">
+      <section data-aos="fade-up" className="py-16 text-center bg-gradient-to-r from-gray-800 to-gray-700">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-pink-600 mb-6">
+          <h2 className="text-3xl font-bold text-gray-200 mb-6">
             Vì làn da khỏe mạnh & rạng rỡ
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-400 text-lg leading-relaxed">
             BeautyShop cam kết cung cấp sản phẩm chất lượng cao, nguồn gốc rõ
             ràng, giúp bạn tự tin tỏa sáng mỗi ngày.
           </p>
